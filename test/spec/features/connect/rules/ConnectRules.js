@@ -21,7 +21,7 @@ ConnectRules.prototype.init = function() {
     var source = context.source,
         target = context.target;
 
-    if (isFrameElement(target)) {
+    if (isFrameElement(target) || isFrameElement(source)) {
       return false;
     }
 
